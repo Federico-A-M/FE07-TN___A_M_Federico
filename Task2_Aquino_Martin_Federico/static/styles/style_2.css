@@ -119,3 +119,6 @@ main{
 
 }
 
+main > p{
+    text-indent: 30px;
+}
