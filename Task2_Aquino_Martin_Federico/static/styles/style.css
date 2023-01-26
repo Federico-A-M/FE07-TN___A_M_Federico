@@ -36,6 +36,10 @@ nav{
     line-height: 450%;
 }
 
+#anchor{
+    display: block;
+}
+
 main{
 
     position: absolute;
