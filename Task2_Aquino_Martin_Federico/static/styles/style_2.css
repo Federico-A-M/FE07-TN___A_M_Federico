@@ -102,20 +102,24 @@ main{
 
 #logo{
     position: absolute;
-    left: 5%;
-    top: 710px;
+    left: 5px;
+    top: 720px;
     background-color: white;
     border: solid;
     z-index: 15;
-    width:180px;
-    height: 180px;
+    width:280px;
+    height:280px;
 }
 
 #hockey_1{
-    position: absolute; /*static default*/
+    position: absolute;
+    left: 5px;
+    top: 1020px;
+    background-color: white;
+    border: solid;
+    z-index: 15;
     width:280px;
     height:280px;
-    opacity: 0%;
 
 }
 
