@@ -1,5 +1,14 @@
-/*Box contenedor --> tipo Mighty Ducks Hockey League
+/*
+body{
+  margin: 200px; 
+  
+  "opcional para que quede mas ensanchado el contenido"
+}
 */
+
+
+
+/*Box contenedor --> tipo Mighty Ducks Hockey League*/
 header > h1 {
   background-color: rgba(255, 255, 255, 50%);
   color: gold;
@@ -62,25 +71,15 @@ div > h2 {
   }
 }
 
-
-
-
-
-
 nav {
   display: block;
   position: static;
   top: 115px;
-  /* left: 600px; */
-  right: 0;
-  /*left: 100px;
-    top: 885px;*/
   z-index: 20;
-  /*width: 280px;
-    height: 280px;*/
   padding-top: 10px;
-  /*line-height: 450%;*/
   text-align: center;
+  justify-content: center;
+
 }
 
 /**contenido en nav*/
@@ -96,29 +95,51 @@ nav {
   border-width: 1.5px;
   color: rgb(31, 164, 241);
   text-decoration: none;
+
+  text-decoration: none;
+  padding:10px;
+  font-family: 'Times New Roman', Times, serif;
+  position: relative;
+  
+  margin-left: 0;
+  margin-right: 0;
 }
 
-#anchor:hover {
-  -webkit-text-stroke: 1px rgb(218, 80, 0);
-  display: inline-block;
+#anchor:after{
+  content: "";
+  width: 0;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+#anchor:hover:after{
   background-color: rgb(238, 216, 20);
+  display: inline-block;
   border: solid;
   border-color: black;
   border-width: 1.5px;
   color: whitesmoke;
   text-decoration: none;
-  margin: 20px;
+  margin: 0px;
   transform: scaleX(1);
+  
+  width: 100%;
+  right: 0; 
 }
 
-main {
+#anchor:hover{
+  color: gold;
+  -webkit-text-stroke: 0.2px rgb(218, 80, 0);
+}
 
+
+main {
   position: static;
-  /* padding-left: 380px;
-    padding-top: 80px;
-    padding-right: 200px; */
   font-size: 1.5rem;
-  /*justify-content: center;*/
   padding-top: 50px;
   padding-bottom: 80px;
   text-align: center;
@@ -132,7 +153,6 @@ main {
   right: 0;
   padding-top: 60px;
   font-size: 1.5rem;
-  /*justify-content: center;*/
   padding-bottom: 80px;
 }
 
@@ -164,15 +184,11 @@ main {
     
 }
 
-
-
-
 #box-logo {
     display: inline;
 }
 #logo {
  
-  /* border: solid; */
   z-index: 15;
   width: 180px;
   height: 180px;
@@ -187,11 +203,6 @@ main {
   right: 0;
   bottom: 1;
   margin: auto;
-
-  /*center items but only in other position
-    margin: auto;
-    display: block;
-    */
 
   animation-name: loguito;
   animation-duration: 3s;
@@ -218,4 +229,8 @@ main > p {
   text-indent: 30px;
   font-family: 'arial', sans-serif;
 
+}
+
+footer{
+  padding: 30px;
 }
