@@ -1,13 +1,26 @@
-/*---------------------logo---------------------------*/
 *{
   font-family: 'arial', sans-serif;
+  font-size: 3.5vh;
 }
 
+body{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/*---------------------header---------------------------*/
+
+/* header{
+} */
+
+
+
 #logo {
- 
+
   z-index: 15;
-  width: 180px;
-  height: 180px;
+  width: 30vh;
+  height: 30vh;
 
   display: flex;
   justify-content: center;
@@ -17,7 +30,6 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 1;
   margin: auto;
 
   animation-name: loguito;
@@ -40,7 +52,7 @@
 header > h1 {
   background-color: rgba(255, 255, 255, 50%);
   color: gold;
-  font-size: 7vh;
+  font-size: 10vh;
   -webkit-text-stroke: 2px rgb(218, 80, 0);
   z-index: 5;
   margin: 40px;
@@ -67,20 +79,20 @@ header > h1 {
 nav {
   display: flex;
   flex-direction: row;
-  justify-content: center; /*eje de abscisas*/
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
   z-index: 20;
-  padding-top: 10px;
+  padding-top: 5px;
   text-align: center;
+  margin-top: 100px;
 
 }
 
 
-#anchor {
+.anchor {
   background-color: rgb(0, 0, 0);
   display: block;
-  font-size: 2.5vh;
   padding: 5px 20px;
   margin-top: 20px;
   border: solid;
@@ -92,12 +104,12 @@ nav {
   text-decoration: none;
   padding:10px;
   position: relative;
-  
+
   margin-left: 0;
   margin-right: 0;
 }
 
-#anchor:after{
+.anchor:after{
   content: "";
   width: 0;
   height: 4px;
@@ -108,7 +120,7 @@ nav {
   will-change: width;
 }
 
-#anchor:hover:after{
+.anchor:hover:after{
   background-color: rgb(238, 216, 20);
   border: solid;
   border-color: black;
@@ -117,12 +129,12 @@ nav {
   text-decoration: none;
   margin: 0px;
   transform: scaleX(1);
-  
+
   width: 100%;
-  right: 0; 
+  right: 0;
 }
 
-#anchor:hover{
+.anchor:hover{
   color: gold;
   -webkit-text-stroke: 0.2px rgb(218, 80, 0);
 }
@@ -131,20 +143,20 @@ nav {
 /*----------------Banner central-------------------------*/
 
 #banner {
-  position: relative;
-  margin: auto;
+
   z-index: 1;
-  width: 1920px;
-  height: 500px; /* 800 */
+  height: 40vw;
+  width: 100%;
+
+  /* width: 75%;
+  margin-left: 12%; */
+
 }
 
 
 /*----------------Upcoming Events-------------------------*/
 
 div > h2 {
-  left: 0%;
-  top: 650px;
-  right: 0%;
   text-align: center;
   background-color: black;
   color: white;
@@ -152,12 +164,17 @@ div > h2 {
   padding-top: 10px;
   padding-bottom: 10px;
   z-index: 10;
+  /* width: 75%;
+  margin-left: 12%; */
 
+
+/*
   animation-duration: 3s;
   animation-name: slidein;
-  animation-direction: alternate;
+  animation-direction: alternate; */
 }
 
+/*
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -168,7 +185,7 @@ div > h2 {
     margin-left: 0%;
     width: 100%;
   }
-}
+} */
 
 
 /*--------------------mains contents--------------------------*/
@@ -176,10 +193,12 @@ div > h2 {
 
 
 main {
-  font-size: 2.5vh;
   padding-top: 50px;
   padding-bottom: 80px;
   text-align: center;
+
+ width: 75%;
+  margin-left: 12%; 
 }
 
 main > p {
@@ -187,14 +206,13 @@ main > p {
 }
 
 
-#about_b{
+.about_b{
   display: flex;
   justify-content: center;
 }
 
 
 #main_about {
-  font-size: 2.5vh;
   padding-top: 50px;
   padding-bottom: 80px;
   padding-left: 40px;
@@ -214,7 +232,6 @@ main > p {
 }
 
 #main_rules {
-  font-size: 2.5vh;
   padding-top: 50px;
   padding-bottom: 80px;
   padding-left: 80px;
@@ -223,16 +240,16 @@ main > p {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  
+
 }
 
 .main_game_info{
-  font-size: 2.5vh;
   padding: 50px 80px 80px 80px;
   text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 40px;
+
 }
 
 
@@ -242,31 +259,28 @@ main > p {
 
 
 #hockey_1 {
-    width:280px;
-    height:280px;
+    width:50vh;
+    height:50vh;
     border-radius: 50%;
 
     position: sticky;
     margin: auto;
-    top: 0;
+    margin-top: 100px;
     left: 0;
     right: 0;
     bottom: 0;
- 
+
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
 
 /*----------------footer proximamente-----------------------*/
 
-footer{
-  padding: 30px;
-}
 
 
 
@@ -276,7 +290,6 @@ footer{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.5vh;  
 }
 
 #div2_main_rules{
@@ -284,13 +297,12 @@ footer{
   flex-direction: column;
   gap: 20px;
   margin-bottom: 80px;
-  font-size: 2.5vh;  
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
 #dt_main_rules{
-  font-weight: bold; 
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -298,49 +310,43 @@ footer{
   text-indent: 30px;
 }
 
-.div_main_rules, strong, b{
-  font-size: 2.5vh;
-}
-
 .div_main_rules, li{
-  font-size: 2.5vh;  
   margin: 40px 0px;
   list-style-position: inside;
 }
 
 #alphabetical_ol > li{
-  font-size: 2.5vh;  
   list-style: lower-alpha;
   list-style-position: inside;
   margin: 0px;
 
-  
+
 }
 
 .div4_main_rules > p{
   text-indent: 60px;
-  font-size: 2.5vh;  
 
 }
 
 .div4_main_rules > ul > li{
-  font-size: 2.5vh;  
   margin: 0px 60px 0px 60px;
   text-indent: 60px;
   list-style-type: circle;
-  
+
 }
 
 /*-----------------de main game info---------------------*/
 
+
+
 .main_game_info > b {
-  font-size: 3.5vh;
+  font-size: 5vh;
   align-self: flex-end;
 }
 
 .italic_special {
   text-decoration: underline;
-  font-size: 2vh;
+  font-size: 3.5vh;
 }
 
 .specifications{
@@ -348,7 +354,7 @@ footer{
   flex-direction: column;
   gap: 20px;
 
-  
+
 }
 
 .__phone_email{
@@ -357,24 +363,28 @@ footer{
    justify-content: space-between;
 }
 
+/*-----------------Table of game info--------------------*/
 
-
+/* table{
+  width: 50%;
+  align-self: center;
+} */
 
 table, th, td{
   border-collapse: collapse;
-  width: 100%;
-  border: rgb(0, 0, 0) 1px solid;
+  /* width: 100%; */
+  /* border: rgb(0, 0, 0) 1px solid; */
 }
 
 thead > tr > th{
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 tbody > tr > th{
-  font-weight: lighter; 
+  font-weight: lighter;
 }
 
 th , td{
-  padding: 8px;
+  padding: 10px;
   text-align: center;
 }
