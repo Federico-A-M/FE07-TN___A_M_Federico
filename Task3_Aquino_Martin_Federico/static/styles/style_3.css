@@ -226,6 +226,15 @@ main > p {
   
 }
 
+.main_game_info{
+  font-size: 2.5vh;
+  padding: 50px 80px 80px 80px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 
 
 /*---------------fotos finales--------------------*/
@@ -261,7 +270,7 @@ footer{
 
 
 
-/*-----------------divs de main rules---------------------*/
+/*-----------------de main rules---------------------*/
 
 #div1_main_rules{
   display: flex;
@@ -280,16 +289,16 @@ footer{
   margin-top: 20px;
 }
 
-#div2_main_rules > b {
-  font-family: sans-serif;
+#dt_main_rules{
+  font-weight: bold; 
+  margin-bottom: 20px;
 }
 
-#div2_main_rules > p {
+#dd_main_rules{
   text-indent: 30px;
 }
 
 .div_main_rules, strong, b{
-  font-family: sans-serif;
   font-size: 2.5vh;
 }
 
@@ -304,10 +313,11 @@ footer{
   list-style: lower-alpha;
   list-style-position: inside;
   margin: 0px;
+
   
 }
 
-.div4_main_rules, p{
+.div4_main_rules > p{
   text-indent: 60px;
   font-size: 2.5vh;  
 
@@ -316,7 +326,55 @@ footer{
 .div4_main_rules > ul > li{
   font-size: 2.5vh;  
   margin: 0px 60px 0px 60px;
-  text-indent: 0px;
+  text-indent: 60px;
   list-style-type: circle;
   
+}
+
+/*-----------------de main game info---------------------*/
+
+.main_game_info > b {
+  font-size: 3.5vh;
+  align-self: flex-end;
+}
+
+.italic_special {
+  text-decoration: underline;
+  font-size: 2vh;
+}
+
+.specifications{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  
+}
+
+.__phone_email{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+
+
+
+table, th, td{
+  border-collapse: collapse;
+  width: 100%;
+  border: rgb(0, 0, 0) 1px solid;
+}
+
+thead > tr > th{
+  font-weight: bold; 
+}
+
+tbody > tr > th{
+  font-weight: lighter; 
+}
+
+th , td{
+  padding: 8px;
+  text-align: center;
 }
