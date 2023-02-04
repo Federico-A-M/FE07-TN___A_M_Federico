@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./static/styles/normalize.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="./static/styles/style.css" /> -->
+    <!-- <link rel="stylesheet" href="./static/styles/style_2.css"> -->
+    <link rel="stylesheet" href="/static/styles/style_3.css" />
+    <title>Mighty Ducks Hockey League</title>
+</head>
+
+<body>
+    <header>
+        <figure id="box-logo">
+            <img id="logo" src="/static/img/Logo_Mighty_ducks-01.png" alt="logo of Mighty Ducks Hockey League" />
+        </figure>
+
+        <h1>MIGHTY DUCKS HOCKEY LEAGUE</h1>
+
+        <nav>
+            <a class="anchor" href="/index.html">Home</a>
+            <!-- -->
+            <a class="anchor" href="/about.html">About MDHL</a>
+            <!-- -->
+            <a class="anchor" href="/contact.html">Contact</a>
+            <!-- -->
+            <a class="anchor" href="/rules.html">Rules</a>
+            <!-- -->
+            <a class="anchor" href="/game_info.html">Game Information</a>
+            <!-- -->
+            <a class="anchor" href="#">Registration</a>
+        </nav>
+
+        <figure>
+            <img id="banner" src="./static/img/design1_image1.jpg" alt="playing hockey" />
+        </figure>
+
+        <div>
+            <h2>Upcoming Events</h2>
+        </div>
+    </header>
+
+    <main>
+        <h1>Registration Form</h1>
+
+        <form action="/registration.html" method="GET">
+            <fieldset class="fieldset_naming">
+                <div class="div_registration">
+                    <label class="label_name">
+                        <span class="etiq">First Name:</span>
+                        <input type="text" name="name" id="name" placeholder="insert Player's First Name..." class="inputs"/>
+                    </label>
+                </div>
+                <div class="div_registration">
+                    <label class="label_last">
+                        <span class="etiq">Last Name:</span>
+                        <input type="text" name="last_name" id="last_name" placeholder="insert last name..." class="inputs"/>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_street">
+                <label>
+                    <span class="etiq">Street Address:</span>
+                    <input type="text" name="Address" id="Address" placeholder="insert Address..." class="inputs"/>
+                </label>
+            </fieldset>
+
+            <fieldset class="fieldset_city_code">
+                <div class="div_registration">
+                    <label>
+                        <span class="etiq">City:</span>
+                        <input type="text" name="City" id="city" placeholder="insert city..." class="inputs"/>
+                    </label>
+                </div>
+                <div class="div_registration">
+                    <label>
+                        <span class="etiq">Zip Code:</span>
+                        <input type="number" name="Code" id="code" placeholder="E.g... 80202 in Denver" class="inputs"/>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_birth_gender">
+                <div class="div_registration">
+                    <label>
+                        <span class="etiq">Birth Date:</span>
+                        <input type="date" name="Date" id="date" placeholder="(mm/dd/yyyy)" class="inputs"/>
+                    </label>
+                </div>
+                <div class="div_registration">
+                    <label>
+                        <span class="etiq">Gender:</span>
+                        <select name="Gender" class="select">
+                            <option value="" selected="" disabled="">...</option>
+                            <option value="female">Female</option>
+                            <option value="male">Male</option>
+                            <option value="transgender">Transgender</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_grade">
+                <span class="etiq">Grade:</span>
+
+                <label>
+                    <input type="radio" name="grade" value="pre-School" class="inputs"/>
+                    <span class="etiq">Pre-School</span>
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="first" class="inputs"/>
+                    <span class="etiq_special">1st</span>
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="second" class="inputs"/>
+                    <span class="etiq_special">2nd</span>
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="third" class="inputs"/>
+                    <span class="etiq_special">3rd</span>
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="fourth" class="inputs"/>
+                    <span class="etiq_special">4th</span>
+                </label>
+                <label>
+                    <input type="radio" name="grade" value="fifth" class="inputs"/>
+                    <span class="etiq_special">5th</span>
+                </label>
+            </fieldset>
+
+            <fieldset class="fieldset_closest_school">
+                <legend>Which elementary school do you live near?</legend>
+                <b>Closest School:</b>
+                <div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="school_near" value="Aj Katzenmaier" class="inputs"/>
+                            <span class="etiq">Aj Katzenmaier</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school_near" value="Marjorie P Hart" class="inputs"/>
+                            <span class="etiq">Marjorie P Hart</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school_near" value="Greenbay" class="inputs"/>
+                            <span class="etiq">Greenbay</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="school_near" value="North Elementary" class="inputs"/>
+                            <span class="etiq">North Elementary</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school_near" value="Howard A Yeager" class="inputs"/>
+                            <span class="etiq">Howard A Yeager</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="school_near" value="South Elementary" class="inputs"/>
+                            <span class="etiq">South Elementary</span>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_play_positions">
+                <legend>
+                    What position(s) do you normally play? (check all that apply)
+                </legend>
+                <div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="play_positions" value="Forward" class="inputs"/>
+                            <span class="etiq">Forward</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="play_positions" value="Defense" class="inputs"/>
+                            <span class="etiq">Defense</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="checkbox" name="play_positions" value="Midfield" class="inputs"/>
+                            <span class="etiq">Midfield</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="play_positions" value="Goalkeeper" class="inputs"/>
+                            <span class="etiq">Goalkeeper</span>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_uniform">
+                <legend>Uniform Size:</legend>
+                <div>
+                    <div>
+                        <label>
+                            <input type="radio" name="u_size" value="Youth Smal" class="inputs"/>
+                            <span class="etiq">Youth Smal</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="u_size" value="Youth Medium" class="inputs"/>
+                            <span class="etiq">Youth Medium</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="u_size" value="Youth Large" class="inputs"/>
+                            <span class="etiq">Youth Large</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="u_size" value="Small" class="inputs"/>
+                            <span class="etiq">Small</span>
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                            <input type="radio" name="u_size" value="Medium" class="inputs"/>
+                            <span class="etiq">Medium</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="u_size" value="Large" class="inputs"/>
+                            <span class="etiq">Large</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="u_size" value="Extra-Large" class="inputs"/>
+                            <span class="etiq">Extra-Large</span>
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset_permission">
+                <legend>Permission to Play</legend>
+                <p>
+                    I, the parent or guardian of the minor registrant, agree that the
+                    registrant and I will abide by all the rules of the Mighty Ducks
+                    Hockey League (MDHL). In recognizing the possibility of physical
+                    injury associated with hockey and in consideration for the “League”
+                    accepting the registrant for its hockey programs and activities, I
+                    hereby release, discharge, and/or otherwise indemnify MDHL, their
+                    employees and associated personnel and volunteers,including the
+                    facilities used for practices and games, against any claim by or on
+                    behalf of the registrant as a result of the registrant’s
+                    participation in the programand/orbeing transported to or from MDHL
+                    sponsored activities, which transportation.
+                    <br />
+                    By signing below, I herebyagree andauthorizethe above.In addition,
+                    by signing below, lalso acknowledge that I have read the
+                    cancellation policy and agree to its terms.
+                </p>
+
+                <label>
+                    <span>Parent/GuardianSignature:</span>
+                    <input type="text" name="signature" placeholder="insert signature..." class="inputs"/>
+                </label>
+
+                <label>
+                    <span class="etiq">Date:</span>
+                    <input type="date" name="date_signature" placeholder="signature day" class="inputs"/>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="send" class="send_btn" />
+        </form>
+
+        <figure>
+            <img id="hockey_1" src="/static/img/hockey_1.jpg" alt="team player of Mighty Ducks Hockey League" />
+        </figure>
+    </main>
+</body>
+
+</html>
