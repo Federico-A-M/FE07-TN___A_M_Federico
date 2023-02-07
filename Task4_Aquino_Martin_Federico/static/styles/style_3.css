@@ -14,8 +14,6 @@ body{
 /* header{
 } */
 
-
-
 #logo {
 
   z-index: 15;
@@ -51,7 +49,7 @@ body{
 /*---Box contenedor de --> tipo Mighty Ducks Hockey League-------*/
 header > h1 {
   background-color: rgba(255, 255, 255, 50%);
-  color: gold;
+  color: rgb(255, 230, 0);
   font-size: 10vh;
   -webkit-text-stroke: 2px rgb(218, 80, 0);
   z-index: 5;
@@ -148,9 +146,6 @@ nav {
   height: 40vw;
   width: 100%;
 
-  /* width: 75%;
-  margin-left: 12%; */
-
 }
 
 
@@ -196,7 +191,7 @@ main {
   padding-bottom: 80px;
   text-align: center;
 
- width: 75%;
+  width: 75%;
   margin-left: 12%; 
 }
 
@@ -219,16 +214,6 @@ main > p {
   text-align: justify;
 }
 
-#main_contact {
-  position: static;
-  margin: auto;
-  top: 890px;
-  left: 0;
-  right: 0;
-  padding-top: 60px;
-  font-size: 1.5rem;
-  padding-bottom: 80px;
-}
 
 #main_rules {
   padding-top: 50px;
@@ -242,15 +227,26 @@ main > p {
 
 }
 
+
 .main_game_info{
   padding: 50px 80px 80px 80px;
   text-align: justify;
   display: flex;
   flex-direction: column;
   gap: 40px;
-
+  
 }
 
+#main_contact {
+  position: static;
+  margin: auto;
+  top: 890px;
+  left: 0;
+  right: 0;
+  padding-top: 60px;
+  font-size: 1.5rem;
+  padding-bottom: 80px;
+}
 
 
 /*---------------fotos finales--------------------*/
@@ -352,8 +348,6 @@ main > p {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-
 }
 
 .__phone_email{
@@ -390,11 +384,27 @@ th , td{
 
 
 /*-----------------Registration Form-------------------*/
+
+/* 
+.registration_main{
+  color: gold;
+} 
+.registration_main > h1{
+  color: rgb(0, 0, 0);
+  -webkit-text-stroke: 0;
+}
+*/
+
+
 form{
   border-radius: 5px;
-  border: 2px solid #39c;
+
+  border: 3px solid #39c;
+  border: 3px solid rgb(218, 80, 0);
+
   padding: 5%;
-  background-color: rgba(255, 255, 0, 0.1);
+  background-color: rgba(255, 238, 1, 0.144);
+  background-color: rgba(109, 109, 109, 0.116);
 }
 
 
@@ -406,8 +416,11 @@ fieldset{
     font-size: 2vh;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #39c;
 
+    border: 2px solid #39c;
+    border: 1px solid rgb(218, 80, 0);
+    
+ 
 }
 
 .select{
@@ -415,6 +428,7 @@ fieldset{
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #39c;
+  border: 1px solid rgb(218, 80, 0);
 
 }
 
@@ -548,5 +562,250 @@ legend{
 
 .send_btn{
   padding: 10px 30px;
+  background-color: rgb(0, 0, 0);
+  margin-top: 20px;
+  border: solid;
+  color: rgb(31, 164, 241);
+  padding:10px;
+
+}
+
+.send_btn:hover{
+  color: gold;
+  -webkit-text-stroke: 0.2px rgb(218, 80, 0);
+}
+
+/*  -------------------  maps location -----------------*/
+
+.maps_location {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+
+}
+
+
+
+
+/*Media queries*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+  *{
+    font-size: 4.5vh;
+  }
+
+  #logo {
+    z-index: 15;
+    width: 60vh;
+    height: 60vh;  
+  }
+
+
+  nav {
+    flex-wrap: wrap;
+    z-index: 20;
+    text-align: center;
+    margin-top: 0px;
+    width: 75%;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  #banner {
+    height: 80vw;
+    width: 100%;
+  }
+
+  main {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+  
+    width: 100%;
+    margin-left: 0%; 
+  }
+  
+  main > p {
+    text-indent: 10px;
+  }
+
+  #main_about {
+    text-align: center;
+  }
+
+  .about_b{
+    font-size: 6vh;
+    margin-bottom: 10px;
+  }
+
+  #main_rules {
+    padding-top: 50px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+  
+  }
+
+  #div1_main_rules {
+    gap: 10px;
+  }
+
+  
+  #dt_main_rules{
+    font-weight: bold;
+    margin-bottom: 20px;
+    
+  }
+  
+  #dd_main_rules{
+    text-indent: 10px;
+  }
+  
+  .div_main_rules, li{
+    margin: 40px 0px;
+    list-style-position: inside;
+  }
+  
+  #alphabetical_ol > li{
+    list-style: lower-alpha;
+    list-style-position: inside;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+
+
+  }
+  
+  .div4_main_rules > p{
+    text-indent: 20px;
+    text-align: justify;
+  
+  }
+  
+  .div4_main_rules > ul > li{
+    margin: 0px 0px 0px 20px;
+    text-indent: 20px;
+    list-style-type: circle;
+    text-align: justify;
+
+  }
+
+  /* ------------------------- */
+
+
+  .main_game_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    padding: 10%;
+    border: 0%;
+    margin: 0%;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .main_game_info > b {
+    font-size: 7vh;
+    text-align: center;
+  }
+  
+  .italic_special {
+    font-size: 4vh;
+    text-align: center;
+  }
+  
+  .specifications{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
+  
+  }
+  
+  .__phone_email{
+     display: block;
+     text-align: left;
+  }
+
+
+  .email_game_info{
+    margin-top: 20px;
+    font-size: 4vh;
+  }
+
+  .map_location{
+    width:300px;
+    height:225px;
+  }
+
+  table, th, td{
+    border-collapse: collapse;
+    font-size: 2.3vh;
+    text-align: start;
+  }
+
+  th , td{
+    text-align: start;
+  }
+
+  .specifications{
+    text-align: start;
+  }
+
+  .fieldset_naming {
+    gap: 20px;
+    justify-content: center;
+
+  }
+
+  .fieldset_city_code{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .fieldset_street{
+    margin-left: 21px;
+  }
+
+  .fieldset_grade{
+    display: block;
+    margin-top: 30px;
+  }
+
+  legend{
+    margin-bottom: 20px;
+  }
+
+  .fieldset_permission{
+    text-align: start;
+  }
+
+  .fieldset_permission > label > .inputs, .etiq{
+    width: 100%;
+  }
+
+  .fieldset_permission > label > .etiq{
+    font-size: 5vh;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1339px){
 
 }
